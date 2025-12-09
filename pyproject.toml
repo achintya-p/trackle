@@ -4,7 +4,7 @@
  
 [project]
 name = "trackle-ml"
-version = "1.1.1"
+version = "0.1.1"
 description = "Local-first, git-aware ML experiment tracking."
 authors = [
     { name = "Trackle Developers" }
