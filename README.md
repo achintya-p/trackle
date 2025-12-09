@@ -9,14 +9,22 @@ Trackle is a lightweight, local-first, git-aware ML experiment tracker.
 - Simple Python API and CLI
 - Git-based reproducibility
 
-## Quick start
+## Installation
 
 ```bash
+pip install trackle-ml            # from PyPI
+# or for development
 pip install -e .
+
+# optional extras
+# pip install trackle-ml[viz]     # matplotlib plots
+# pip install trackle-ml[rich]    # richer CLI output (if extended)
 ```
 
+## Quick start
+
 ```python
-import trackle
+import trackle_ml as trackle
 
 trackle.init(run_name="demo")
 trackle.log_params({"lr": 0.01})
@@ -44,13 +52,8 @@ trackle_experiments/
 ## CLI
 
 ```
-trackle list-runs [--base DIR] [--limit N]
-trackle diff-runs <run_a> <run_b> [--base DIR]
-trackle plot-metrics <run_id> [--key metric] [--base DIR]
+trackle-ml list-runs [--base DIR] [--limit N]
+trackle-ml diff-runs <run_a> <run_b> [--base DIR]
+trackle-ml plot-metrics <run_id> [--key metric] [--base DIR]
 ```
-
-## Extras
-
-- `pip install trackle[viz]` to enable matplotlib plotting in the CLI.
-- `pip install trackle[rich]` to enable richer CLI output (if extended later).
 

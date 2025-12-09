@@ -41,6 +41,9 @@ dev = [
 Homepage = "https://github.com/achintya-p/trackle"
 Repository = "https://github.com/achintya-p/trackle"
 
+[project.scripts]
+trackle-ml = "trackle_ml.cli.main:main"
+
 [tool.setuptools.packages.find]
 include = ["trackle*"]
 
