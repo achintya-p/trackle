@@ -4,7 +4,7 @@ Tests for artifact copying.
 
 from pathlib import Path
 
-import trackle
+import trackle_ml as trackle
 
 
 def test_log_artifact_copies_file(tmp_path: Path) -> None:
