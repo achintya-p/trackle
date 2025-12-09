@@ -1,0 +1,12 @@
+__pycache__/
+.DS_Store
+.pytest_cache/
+.mypy_cache/
+*.pyc
+*.pyo
+*.pyd
+build/
+dist/
+*.egg-info/
+trackle_experiments/
+
